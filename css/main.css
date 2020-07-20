@@ -1,0 +1,285 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.game-zone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px auto;
+}
+
+.game-zone .main-field {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "cell-1 cell-2 cell-3" "cell-4 cell-5 cell-6" "cell-7 cell-8 cell-9";
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.game-zone .main-field .cell-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid black;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: cell-1;
+}
+
+.game-zone .main-field .cell-1:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #e3e3e3;
+}
+
+.game-zone .main-field .cell-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid black;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cell-2;
+}
+
+.game-zone .main-field .cell-2:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #e3e3e3;
+}
+
+.game-zone .main-field .cell-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid black;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: cell-3;
+}
+
+.game-zone .main-field .cell-3:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #e3e3e3;
+}
+
+.game-zone .main-field .cell-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid black;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cell-4;
+}
+
+.game-zone .main-field .cell-4:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #e3e3e3;
+}
+
+.game-zone .main-field .cell-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid black;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: cell-5;
+}
+
+.game-zone .main-field .cell-5:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #e3e3e3;
+}
+
+.game-zone .main-field .cell-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid black;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: cell-6;
+}
+
+.game-zone .main-field .cell-6:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #e3e3e3;
+}
+
+.game-zone .main-field .cell-7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid black;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cell-7;
+}
+
+.game-zone .main-field .cell-7:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #e3e3e3;
+}
+
+.game-zone .main-field .cell-8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid black;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: cell-8;
+}
+
+.game-zone .main-field .cell-8:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #e3e3e3;
+}
+
+.game-zone .main-field .cell-9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid black;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: cell-9;
+}
+
+.game-zone .main-field .cell-9:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #e3e3e3;
+}
+
+.game-zone .turn {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.game-zone .turn span {
+  font-weight: bold;
+}
+
+.game-zone .restart-button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  right: 200px;
+  top: 30px;
+  padding: 15px;
+  width: 250px;
+  height: 200px;
+  border: 1px solid black;
+  font-size: 36px;
+}
+/*# sourceMappingURL=main.css.map */

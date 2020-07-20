@@ -1,0 +1,122 @@
+@mixin cell-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    border: 1px solid black;
+
+    &:hover {
+        transition: 0.3s;
+        background: #e3e3e3;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.game-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+
+    .main-field {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "cell-1 cell-2 cell-3"
+        "cell-4 cell-5 cell-6"
+        "cell-7 cell-8 cell-9";
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+    
+        .cell-1 {
+            @include cell-style();
+    
+            grid-area: cell-1;
+        }
+    
+        .cell-2 {
+            @include cell-style();
+    
+            grid-area: cell-2;
+        }
+    
+        .cell-3 {
+            @include cell-style();
+    
+            grid-area: cell-3;
+        }
+    
+        .cell-4 {
+            @include cell-style();
+    
+            grid-area: cell-4;
+        }
+    
+        .cell-5 {
+            @include cell-style();
+    
+            grid-area: cell-5;
+        }
+    
+        .cell-6 {
+            @include cell-style();
+    
+            grid-area: cell-6;
+        }
+    
+        .cell-7 {
+            @include cell-style();
+    
+            grid-area: cell-7;
+        }
+    
+        .cell-8 {
+            @include cell-style();
+    
+            grid-area: cell-8;
+        }
+    
+        .cell-9 {
+            @include cell-style();
+    
+            grid-area: cell-9;
+        }
+    }
+    
+    .turn {
+        margin-top: 10px;
+        font-size: 24px;
+    
+        span {
+            font-weight: bold;;
+        }
+    }
+    
+    .restart-button {
+        margin-top: 10px;
+        padding: 10px;
+        width: 100px;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 200px;
+    top: 30px;
+    padding: 15px;
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    font-size: 36px;
+}
